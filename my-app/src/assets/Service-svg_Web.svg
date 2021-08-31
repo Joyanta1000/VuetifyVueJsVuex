@@ -1,0 +1,117 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-9 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #97c21e;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #97c21e;
+      }
+
+      .cls-3, .cls-9 {
+        stroke: #333;
+      }
+
+      .cls-4 {
+        font-size: 21.47px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7 {
+        font-family: Blinker-Bold, Blinker;
+        font-weight: 700;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        font-size: 22.41px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.1em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.02em;
+      }
+
+      .cls-8 {
+        fill: #676767;
+      }
+
+      .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13 {
+        fill: #333;
+      }
+
+      .cls-11 {
+        font-size: 25px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-11, .cls-12, .cls-13 {
+        font-family: GothamRounded-Book, Gotham Rounded;
+      }
+
+      .cls-12 {
+        font-size: 17.36px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-13 {
+        font-size: 12.41px;
+        letter-spacing: 0.02em;
+      }
+    </style>
+  </defs>
+  <title>Service-svg</title>
+  <g>
+    <g>
+      <polyline class="cls-1" points="139.21 102.87 88.46 134.87 126.71 196.12 132.71 166.37 117.96 141.87 142.96 125.37 147.46 108.12"/>
+      <circle class="cls-2" cx="150.21" cy="97.03" r="2.98"/>
+    </g>
+    <g>
+      <polyline class="cls-1" points="168.28 197.8 218.95 165.67 180.54 104.52 174.62 134.28 189.43 158.74 164.47 175.31 160.02 192.57"/>
+      <circle class="cls-2" cx="157.29" cy="203.66" r="2.98" transform="matrix(1, 0, 0, 1, -0.52, 0.4)"/>
+    </g>
+    <line class="cls-3" x1="169.21" y1="85.7" x2="138.04" y2="215.03"/>
+    <text class="cls-4" transform="matrix(1.03, 0.22, -0.21, 0.98, 86.18, 101)">Ui</text>
+    <text class="cls-4" transform="translate(226.55 143.6) rotate(-0.01) scale(1.05 1)">Ux</text>
+    <text class="cls-5" transform="translate(64.79 188.39) rotate(-0.01) scale(1.01 1)">&lt;</text>
+    <text class="cls-6" transform="translate(76.67 187.72) rotate(8.21) scale(1.07 1)">/</text>
+    <text class="cls-7" transform="translate(87.47 188.34) rotate(-0.01) scale(0.99 1)">&gt;</text>
+    <circle class="cls-8" cx="224.23" cy="192.1" r="2.04"/>
+    <circle class="cls-8" cx="185.56" cy="221.43" r="2.04"/>
+    <circle class="cls-8" cx="68.98" cy="212.18" r="2.04"/>
+    <circle class="cls-8" cx="73.06" cy="114.76" r="2.04"/>
+    <circle class="cls-8" cx="114.23" cy="73.43" r="2.04"/>
+    <circle class="cls-8" cx="192.23" cy="70.26" r="2.04"/>
+    <circle class="cls-8" cx="239.73" cy="104.52" r="2.04"/>
+    <circle class="cls-9" cx="250.06" cy="178.41" r="4.42"/>
+    <circle class="cls-9" cx="56.04" cy="153.91" r="4.5"/>
+    <circle class="cls-10" cx="114.23" cy="234.35" r="2.04"/>
+    <text class="cls-11" transform="translate(211.34 225.36)">+</text>
+    <text class="cls-11" transform="translate(205.09 109.61)">+</text>
+    <text class="cls-12" transform="translate(147.73 239.61) scale(1.22 0.93)">x</text>
+    <text class="cls-12" transform="translate(148.73 69.93) scale(1.22 0.93)">x</text>
+    <text class="cls-13" transform="translate(92.27 219.74) scale(1.22 0.93)">x</text>
+    <text class="cls-13" transform="translate(45.52 117.74) scale(1.22 0.93)">x</text>
+  </g>
+</svg>

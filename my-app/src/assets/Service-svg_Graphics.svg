@@ -1,0 +1,106 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #676767;
+      }
+
+      .cls-10, .cls-2, .cls-7, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #333;
+      }
+
+      .cls-10, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        font-size: 25px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-family: GothamRounded-Book, Gotham Rounded;
+      }
+
+      .cls-5 {
+        font-size: 17.36px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-6 {
+        font-size: 12.41px;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-10, .cls-7, .cls-9 {
+        stroke: #97c21e;
+      }
+
+      .cls-7, .cls-9 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        stroke-width: 4px;
+      }
+
+      .cls-8 {
+        fill: #97c21e;
+      }
+
+      .cls-9 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>Service-svg</title>
+  <g>
+    <circle class="cls-1" cx="224.23" cy="192.1" r="2.04"/>
+    <circle class="cls-1" cx="185.56" cy="221.43" r="2.04"/>
+    <circle class="cls-1" cx="68.98" cy="212.18" r="2.04"/>
+    <circle class="cls-1" cx="73.06" cy="114.76" r="2.04"/>
+    <circle class="cls-1" cx="114.23" cy="73.43" r="2.04"/>
+    <circle class="cls-1" cx="192.23" cy="70.26" r="2.04"/>
+    <circle class="cls-1" cx="239.73" cy="104.52" r="2.04"/>
+    <circle class="cls-2" cx="250.06" cy="178.41" r="4.42"/>
+    <circle class="cls-2" cx="56.04" cy="153.91" r="4.5"/>
+    <circle class="cls-3" cx="114.23" cy="234.35" r="2.04"/>
+    <text class="cls-4" transform="translate(211.34 225.36)">+</text>
+    <text class="cls-4" transform="translate(205.09 109.61)">+</text>
+    <text class="cls-5" transform="translate(147.73 239.61) scale(1.22 0.93)">x</text>
+    <text class="cls-5" transform="translate(148.73 69.93) scale(1.22 0.93)">x</text>
+    <text class="cls-6" transform="translate(92.27 219.74) scale(1.22 0.93)">x</text>
+    <text class="cls-6" transform="translate(45.52 117.74) scale(1.22 0.93)">x</text>
+    <path class="cls-7" d="M152.32,89s-13.17-1.67-25.17,10-40.5,40.33-40.5,40.33l72.33,72,41.33-40.5s14.86-16.33,11-30"/>
+    <path class="cls-7" d="M173.66,110.37s.5,9.33-1.83,13.33c0,0,9.83-5.67,17.67-4.17"/>
+    <path class="cls-3" d="M122,135.87l12.5,12.5,12.83-12.5s9.58-9.08,2.83-15.83-15,2.67-15,2.67Z"/>
+    <path class="cls-3" d="M149.31,163l12.5,12.5,16-15.55s9.63-8.47,2.88-15.22-15.25,2.18-15.25,2.18Z"/>
+    <g>
+      <circle class="cls-3" cx="151.55" cy="81.03" r="1.17"/>
+      <circle class="cls-3" cx="181.16" cy="110.64" r="1.17"/>
+      <circle class="cls-3" cx="166.78" cy="96.26" r="2.4"/>
+      <line class="cls-2" x1="151.55" y1="81.03" x2="181.16" y2="110.64"/>
+    </g>
+    <g>
+      <circle class="cls-3" cx="189.23" cy="112.41" r="1.17"/>
+      <circle class="cls-3" cx="218.84" cy="142.01" r="1.17"/>
+      <circle class="cls-3" cx="204.04" cy="127.21" r="2.4"/>
+      <line class="cls-2" x1="189.23" y1="112.41" x2="218.84" y2="142.01"/>
+    </g>
+    <path class="cls-8" d="M87.33,81.09l4.31,15.7a.57.57,0,0,0,1,.12l3.07-5.64A.57.57,0,0,1,96,91l6-2.58a.57.57,0,0,0,0-1l-13.9-7A.57.57,0,0,0,87.33,81.09Z"/>
+    <polygon class="cls-9" points="236.27 130.38 232.09 152.7 239.47 146.05 248.31 147.53 236.27 130.38"/>
+    <polygon class="cls-8" points="101.07 173.03 106.99 179.12 102.82 183.87 96.24 177.53 101.07 173.03"/>
+    <path class="cls-10" d="M85,193.87,86.07,195a26.55,26.55,0,0,1,13.67-3.92l2.78-7.55-6-5.74-6.89,1.62S87.59,190.27,85,193.87Z"/>
+    <circle class="cls-8" cx="95.67" cy="184.75" r="1.54" transform="translate(-79.56 72.59) rotate(-30)"/>
+    <line class="cls-10" x1="95.67" y1="184.75" x2="85.52" y2="194.44"/>
+  </g>
+</svg>
