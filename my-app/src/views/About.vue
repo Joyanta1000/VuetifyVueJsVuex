@@ -51,34 +51,17 @@
   </v-app-bar>
 
 
-    <v-layout row wrap>
+    <v-layout row wrap v-if="details">
       <v-flex xs12 class="text-xs-center" mt-5>
         <h1 class="h1_tag">OVER 10 YEARS</h1>
 <h1 class="h1_tag">IN THE GAME</h1>
       </v-flex>
       <v-flex xs12 class="text-xs-center" mt-3>
     <div class="d-flex justify-space-between mb-6">
-        <div class="pa-1">
-          <h3>ABOUT US</h3>
+        <div class="pa-1" v-for="detail in details" :key="detail.ID">
+          <h3>{{ detail.title }}</h3>
           <p class="p_tag">
-            Design with meaning. Dynamicflow is a design and development firm. We work across the design and implementation of ideas that helps businesses to navigate in the competitive marketplace. We specialize in creating branding solutions that has an enduring impact for businesses. We drive results by uncovering, crafting and sharing client’s compelling ideas to create desirable solutions.
-          </p>
-        </div>
-        <div class="pa-2">
-          <h3>BUSINESS CONCEPT</h3>
-          <p class="p_tag">
-            We focus on providing quality service with sustainability in mind for our brand to stand out. Our plan is to leverage our services and use a marketing strategy that is closely aligned with building long-term relationships with our clients. By building a business based on long-term relationship with satisfied clients, we simultaneously build defenses against competition.
-          </p>
-        </div>
-        <div class="pa-3">
-          <h3>WOW FACTORS</h3>
-          <p class="p_tag">
-            <ul>
-            <li>We offer “One Stop Solution” for our client’s digital needs</li>
-            <li>Our prices are very affordable – normally 10% less than any creative agencies</li>
-            <li>Our competitive edge is our Evaluation Period. The clients will have the opportunity to decide whether they want to sign-up with us only after evaluating our skills</li>
-            <li>We are passionate about what we do and very flexible</li>
-            </ul>
+            {{ detail.description }}
           </p>
         </div>
     </div>
@@ -88,18 +71,34 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'About',
   data () {
     return {
+      details:[],
       items_lists: [
           { title: 'SignIn', path: '/signin', icon: 'mdi-account-key' },
           { title: 'About', path: '/about', icon: 'view_agenda' },
           { title: 'Contact', path: '/contact', icon: 'contacts' },
           { title: 'Service', path: '/service', icon: 'miscellaneous_services' },
         ],
+        detail: null,
+        title: "",
+        description: "",
     }
-  }
+  },
+  mounted(){
+            axios
+      .get('http://127.0.0.1/MyProject/MyTest/showAboutDetails.php')
+      .then(({data})=>{
+                    this.details = data[0]
+                    console.log(this.details)
+                    
+                }).catch(({ data })=>{
+                    console.error(data)
+                })
+        },
 };
 </script>
 

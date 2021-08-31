@@ -176,7 +176,7 @@ items_lists: [
 
 mounted(){
             axios
-      .get('http://127.0.0.1/MyTest/showData.php')
+      .get('http://127.0.0.1/MyProject/MyTest/showData.php')
       .then(({data})=>{
                     
                     console.log(data[0])
@@ -215,7 +215,7 @@ mounted(){
 
           axios({
             method: 'post',
-            url: 'http://127.0.0.1/MyTest/index.php',
+            url: 'http://127.0.0.1/MyProject/MyTest/index.php',
             data: formData,
             config: { headers: {'Content-Type': 'application/json; charset=UTF-8' }}
         })
