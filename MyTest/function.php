@@ -61,6 +61,19 @@ print_r($ret);
 
 }
 
+public function showServiceDetails()
+{
+
+$quer = mysqli_query($this->dbh,"select * from service");
+		
+$res = array($quer->fetch_all(MYSQLI_ASSOC));
+
+$ret = json_encode($res);
+
+print_r($ret);
+
+}
+
 // $result=$this->conn->query($sql);
 //       if($result->num_rows > 0) {
 //          return $result->fetch_all(MYSQLI_ASSOC);

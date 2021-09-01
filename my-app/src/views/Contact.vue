@@ -54,10 +54,10 @@
     ref="form"
     v-model="valid"
     lazy-validation
+
+    class="pa-md-4 mx-lg-auto"
   >
 
-  
-  
     <v-text-field
       v-model="name"
       :counter="10"

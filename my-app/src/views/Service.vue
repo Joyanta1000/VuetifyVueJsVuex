@@ -76,18 +76,18 @@
 
 
     <div class="d-flex justify-space-between mb-3">
-        <div class="pa-1">
+        <div class="pa-1" v-for="detail in details" :key="detail.id">
             <v-img
             contain
-  lazy-src="../assets/Service-svg_Web.svg"
+  
   max-height="300"
   max-width="450"
-  src="../assets/Service-svg_Web.svg"
+  v-bind:src="detail.image"
   
 ></v-img>
-          <h3 class="h3_tag">Web</h3>
+          <h3 class="h3_tag">{{ detail.title }}</h3>
           <p class="p_tag">
-            We provide website development to a variety of companies ranging from an entrepreneur to a Fortune 500 company. We focus on matching a solution with your business needs that can scale long-term. We have mastered HTML, CSS, and Javascript and are constantly reading source code. Being that every project we work on is different in complexity, we can build anything.
+            {{ detail.description }}
           </p>
           <br>
            <v-row
@@ -106,7 +106,7 @@
   </v-row>
 
         </div>
-        <div class="pa-2">
+        <!-- <div class="pa-2">
             <v-img
             contain
   lazy-src="../assets/Service-svg_Mobile.svg"
@@ -134,8 +134,8 @@
       View
     </v-btn>
   </v-row>
-        </div>
-        <div class="pa-3">
+        </div> -->
+        <!-- <div class="pa-3">
             <v-img
             contain
   lazy-src="../assets/Service-svg_Graphics.svg"
@@ -163,7 +163,7 @@
       View
     </v-btn>
   </v-row>
-        </div>
+        </div> -->
 
     </div>
       </v-flex>
@@ -174,11 +174,15 @@
 <script>
 
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import axios from 'axios'
 
 export default {
   name: 'Service',
   data () {
     return {
+      details:[],
+      path:'../assets/',
+      detail: null,
       items_lists: [
           { title: 'SignIn', path: '/signin', icon: 'mdi-account-key' },
           { title: 'About', path: '/about', icon: 'view_agenda' },
@@ -186,7 +190,18 @@ export default {
           { title: 'Service', path: '/service', icon: 'miscellaneous_services' },
         ],
     }
-  }
+  },
+  mounted(){
+            axios
+      .get('http://127.0.0.1/MyProject/MyTest/showServiceDetails.php')
+      .then(({data})=>{
+                    this.details = data[0]
+                    console.log(this.details)
+                    
+                }).catch(({ data })=>{
+                    console.error(data)
+                })
+        },
 };
 </script>
 

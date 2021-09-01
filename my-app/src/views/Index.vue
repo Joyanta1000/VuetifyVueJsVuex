@@ -222,6 +222,7 @@
     <v-col
       cols="12"
       sm="6"
+      
     >
       <v-hover
         v-slot="{ hover }"
@@ -234,8 +235,8 @@
           height="350"
           max-width="350"
         >
-          <v-card-text class="font-weight-medium mt-12 text-center text-subtitle-1">
-            <v-layout justify-center align-center>
+          <v-card-text class="font-weight-medium mt-12 text-center text-subtitle-1" >
+            <v-layout justify-center align-center class="pa-md-4 mx-lg-auto">
               <v-flex shrink>
             <v-img
   lazy-src="../assets/person_1.jpeg"
@@ -244,15 +245,11 @@
   src="../assets/person_1.jpeg"
 ></v-img>
               </v-flex>
+              
             </v-layout>
-          </v-card-text>
-          <v-card-text class="font-weight-medium mt-12 text-center text-subtitle-1">
-            <v-layout justify-center align-center>
-              <v-flex shrink>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates atque mollitia nemo dolorem ab.
-              </v-flex>
-            </v-layout>
           </v-card-text>
+          
         </v-card>
       </v-hover>
     </v-col>
@@ -260,6 +257,7 @@
     <v-col
       cols="12"
       sm="6"
+      class="pa-md-4 mx-lg-auto"
     >
       <v-hover
         v-slot="{ hover }"
@@ -273,7 +271,7 @@
           max-width="350"
         >
           <v-card-text class="font-weight-medium mt-12 text-center text-subtitle-1">
-            <v-layout justify-center align-center>
+            <v-layout justify-center align-center class="pa-md-4 mx-lg-auto">
               <v-flex shrink>
             <v-img
   lazy-src="../assets/person_2.jpg"
@@ -284,15 +282,10 @@
 ></v-img>
               </v-flex>
             </v-layout>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates atque mollitia nemo dolorem ab.
           </v-card-text>
 
-          <v-card-text class="font-weight-medium mt-12 text-center text-subtitle-1">
-            <v-layout justify-center align-center>
-              <v-flex shrink>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates atque mollitia nemo dolorem ab.
-              </v-flex>
-            </v-layout>
-          </v-card-text>
+          
 
         </v-card>
       </v-hover>
