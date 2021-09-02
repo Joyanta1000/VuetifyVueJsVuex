@@ -6,10 +6,10 @@
                 link >
         <v-list-item-content>
           
-          <v-list-item-title class="text-h6">
+          <v-list-item-title style="color: white;" class="text-h6">
              My Application
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color: white;">
             Welcome to my application
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -38,7 +38,7 @@
       </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar app>
+  <v-app-bar style="background-color: DarkGreen;" app>
 
           <v-spacer></v-spacer>
 

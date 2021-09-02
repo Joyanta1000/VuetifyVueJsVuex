@@ -11,7 +11,7 @@ function __construct()
 {
 $con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
 $this->dbh=$con;
-// Check connection
+
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -23,17 +23,6 @@ $ret=mysqli_query($this->dbh,"insert into contact (name,email,message)
 values('$name','$email','$message')");
 return $ret;
 }
-
-//  public function show()
-//  {
-// $ret = mysqli_query($this->dbh, "select * from contact");
-// if($ret->num_rows > 0) {
-//   print_r( $ret->fetch_all(MYSQLI_ASSOC) );
-// }
-// else{
-//  return false;
-// }
-
 
 public function show()
 {
@@ -73,14 +62,6 @@ $ret = json_encode($res);
 print_r($ret);
 
 }
-
-// $result=$this->conn->query($sql);
-//       if($result->num_rows > 0) {
-//          return $result->fetch_all(MYSQLI_ASSOC);
-//       }
-//       else{
-//         return false;
-//       }
 
 }
 ?>

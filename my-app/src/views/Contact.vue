@@ -2,15 +2,15 @@
 
 <v-container>
 
-<v-app-bar app>
+<v-app-bar style="background-color: Green;" app>
 <v-list-item to="/"
                 link >
         <v-list-item-content>
           
-          <v-list-item-title class="text-h6">
+          <v-list-item-title style="color: white;" class="text-h6">
              My Application
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color: white;">
             Welcome to my application
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -29,7 +29,7 @@
                 v-bind="attrs"
                 v-on="on"
               >
-                <v-icon style="color: black;">mdi-dots-vertical</v-icon>
+                <v-icon style="color: white;">mdi-dots-vertical</v-icon>
               </v-btn>
             </template>
 
@@ -131,6 +131,116 @@
 </template>
 
 <script>
+// import Vue from 'vue'
+// import Vuex from 'vuex'
+// import axios from 'axios'
+
+// Vue.use(Vuex)
+
+// const state = {
+//     posts: []
+// }
+
+// const getters = {}
+
+// const actions = {
+//     getPosts({ commit }) {
+//         axios.get('http://127.0.0.1/MyProject/MyTest/showData.php')
+//             .then(response => {
+
+//               console.log(response)
+//                 commit('SET_POSTS', response.data)
+//         })
+//     }
+// }
+
+// const mutations = {
+//     SET_POSTS(state, posts) {
+//         state.posts = posts
+//     }
+// }
+
+// export default new Vuex.Store({
+//     state,
+//     getters,
+//     actions,
+//     mutations,
+
+//      mounted() {
+//     axios.get('http://127.0.0.1/MyProject/MyTest/showData.php')
+//             .then(response => {
+
+//               console.log(response)
+//                 // commit('SET_POSTS', response.data)
+//         })
+//   }
+
+// })
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+import 'es6-promise/auto'
+
+Vue.use(Vuex)
+
+// const store = new Vuex.Store({
+//   state: {
+//     count: 0
+//   },
+//   mutations: {
+//     increment (state) {
+//       state.count++
+//       store.commit('increment')
+
+// console.log(store.state.count) 
+//     },
+
+//   }, 
+
+// });
+
+//  new Vue({
+//   el: '#app',
+//   store: store,
+
+//   methods: {
+//   increment() {
+//     this.$store.commit('increment')
+//     console.log(this.$store.state.count)
+//   }
+// } 
+// })
+
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment: state => state.count++,
+    decrement: state => state.count--
+  }
+})
+
+new Vue({
+  computed: {
+    count () {
+      console.log(store.state.count)
+      return store.state.count
+    }
+  },
+  methods: {
+    increment () {
+      store.commit('increment')
+    },
+    decrement () {
+      store.commit('decrement')
+    }
+  }
+})
+
+</script>
+
+<script>
 
 import axios from 'axios'
 
@@ -147,8 +257,6 @@ items_lists: [
         ],
 
       valid: true,
-
-
       name: '',
       nameRules: [
         v => !!v || 'Name is required',
@@ -179,7 +287,7 @@ mounted(){
       .get('http://127.0.0.1/MyProject/MyTest/showData.php')
       .then(({data})=>{
                     
-                    console.log(data[0])
+                    //console.log(data[0])
                     
                 }).catch(({ data })=>{
                     console.error(data)
@@ -198,7 +306,6 @@ mounted(){
 
           // alert(true);
 
-
           let formData = new FormData();
         
         formData.append('name', this.name)
@@ -206,12 +313,9 @@ mounted(){
         formData.append('message', this.message)
         formData.append('action', 'insert')
 
-
           // console.log(this.name);
           // console.log(this.email);
           // console.log(this.message);
-
-          
 
           axios({
             method: 'post',
@@ -221,14 +325,12 @@ mounted(){
         })
         .then(function (response) {
             //handle success
-            console.log(response)
-            
+            //console.log(response)
         })
         .catch(function (response) {
             //handle error
-            console.log(response)
+            //console.log(response)
         });
-
         }
         // alert(this.$refs.form.validate());
       },

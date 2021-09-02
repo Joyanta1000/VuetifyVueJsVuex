@@ -36,16 +36,16 @@
       </v-list>
   </v-navigation-drawer> -->
 
-  <v-app-bar app>
+  <v-app-bar style="background-color: Green;" app>
 
      <v-list-item  >
         <v-list-item-content>
           
-          <v-list-item-title class="text-h6" to="/"
+          <v-list-item-title class="text-h6" style="color: white;" to="/"
                 link>
              My Application
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color: white;">
             Welcome to my application
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -65,7 +65,7 @@
                 v-bind="attrs"
                 v-on="on"
               >
-                <v-icon style="color: black;">mdi-dots-vertical</v-icon>
+                <v-icon style="color: white;">mdi-dots-vertical</v-icon>
               </v-btn>
             </template>
 

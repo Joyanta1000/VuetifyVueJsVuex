@@ -2,15 +2,15 @@
   <v-container fluid>
     
 
-<v-app-bar app>
+<v-app-bar style="background-color: Green;" app>
 <v-list-item to="/"
                 link >
         <v-list-item-content>
           
-          <v-list-item-title class="text-h6">
+          <v-list-item-title style="color: white;" class="text-h6">
              My Application
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color: white;">
             Welcome to my application
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -29,7 +29,7 @@
                 v-bind="attrs"
                 v-on="on"
               >
-                <v-icon style="color: black;">mdi-dots-vertical</v-icon>
+                <v-icon style="color: white;">mdi-dots-vertical</v-icon>
               </v-btn>
             </template>
 

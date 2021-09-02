@@ -39,7 +39,7 @@
       </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar app>
+  <v-app-bar style="background-color: Green;" app>
 
           <v-spacer></v-spacer>
 

@@ -1,15 +1,15 @@
 <template>
   <v-container fluid>
 
-<v-app-bar app>
+<v-app-bar style="background-color: Green;" app>
 <v-list-item to="/"
                 link >
-        <v-list-item-content>
+        <v-list-item-content >
           
-          <v-list-item-title class="text-h6">
+          <v-list-item-title style="color:white;" class="text-h6">
              My Application
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color:white;">
             Welcome to my application
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -28,7 +28,7 @@
                 v-bind="attrs"
                 v-on="on"
               >
-                <v-icon style="color: black;">mdi-dots-vertical</v-icon>
+                <v-icon style="color: white;">mdi-dots-vertical</v-icon>
               </v-btn>
             </template>
 
@@ -79,11 +79,10 @@
         <div class="pa-1" v-for="detail in details" :key="detail.id">
             <v-img
             contain
-  
-  max-height="300"
-  max-width="450"
-  v-bind:src="detail.image"
-  
+            v-bind:lazy-src="require('../assets/' + detail.image)"
+  max-height = "300"
+  max-width = "450"
+  v-bind:src = "require('../assets/' + detail.image)"
 ></v-img>
           <h3 class="h3_tag">{{ detail.title }}</h3>
           <p class="p_tag">
@@ -181,7 +180,7 @@ export default {
   data () {
     return {
       details:[],
-      path:'../assets/',
+      //path:'../assets/',
       detail: null,
       items_lists: [
           { title: 'SignIn', path: '/signin', icon: 'mdi-account-key' },
