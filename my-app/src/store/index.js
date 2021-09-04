@@ -61,7 +61,7 @@ getters: {
 
         return new Promise((resolve) => {
 
-            shop.getProducts(products => {
+            shop.getProducts(() => {
                 commit('setProducts'. products)
                 resolve()
             })
