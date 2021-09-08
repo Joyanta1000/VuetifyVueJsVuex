@@ -15,6 +15,12 @@ export default {
         }
     },
 
+    // mounted: {
+    //     live(){
+    //     console.log(localStorage.cart)
+    //     }
+    // },
+
     computed: {
         myAppName(){
             return this.$store.getters.getAppName;
@@ -23,6 +29,7 @@ export default {
         cart(){
             return this.$store.getters.getCart;
         }
+
     }
 }
 </script>
